@@ -14,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [pageController::class , 'homepage'])->name('homepage');
-Route::get('/orari', [pageController::class , 'partenze'])->name('partenze');
-Route::get('/chi-siamo', [pageController::class , 'about'])->name('about');
-Route::get('/contatti', [pageController::class, 'contact'])->name('contact');
+
+
+
+Route::get('/', [PageController::class, 'homepage'])->name('homepage');
+
+Route::get('/detaglio', [PageController::class, 'detaglio'])->name('detaglio');
 
 
