@@ -14,20 +14,20 @@
             style="background-image: url('https://leganerd.com/wp-content/uploads/2022/09/voli-aerei.jpg')">
             <div class="text-center my-5">
 
-                <h1 class="text-white fs-3 fw-bolder">Full relax </h1>
-                <p class="text-white-50 mb-0">Viaggia Con Noi</p>
+                <h1 class="text-white fs-1 fw-bolder">Full relax </h1>
+                <p class="text-white-50 mb-0 fs-1">Viaggia Con Noi</p>
             </div>
         </header>
         <!-- Content section-->
 
         <!-- Image element - set the background image for the header in the line below-->
         <div class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/4ulffa6qoKA/1200x800')">
-            <div class="container opacity-75 ">
+            <div class="container opacity-75 shadow-lg p-3 mb-5 bg-body-danger rounded">
 
 
                 <div class="row">
                     <div class="col-12">
-                        <div class="card p-4">
+                        <div class="card p-4 ">
                             <div class="card-body text-center">
                                 <h5 class="card-title m-b-0">Static Table With Checkboxes</h5>
                             </div>
@@ -87,15 +87,13 @@
             <hr>
 
             {{-- LA SECONDA CARD VOLI --}}
-            <div class="container opacity-75 ">
+            <div class="container opacity-75 mb-6 ">
 
 
                 <div class="row ">
                     <div class="col-12">
                         <div class="card p-4">
-                            <div class="card-body text-center c">
-                                <h5 class="card-title m-b-0">Static Table With Checkboxes</h5>
-                            </div>
+                           
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead class="thead-light text-success">
@@ -140,7 +138,9 @@
 
 
 
-
+<div class="container-fluid">
+  ...
+</div>
 
 
 

@@ -10,6 +10,6 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
 </head> <!-- Walk as if you are kissing the Earth with your feet. - Thich Nhat Hanh -->
 </div>

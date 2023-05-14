@@ -1,8 +1,8 @@
 
      <div>   
- <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Airfly Company  2023</p>
+ <footer class="py-5 bg-warning mt-10">
+        <div class="container mt-0">
+            <p class="m-6 text-center text-dark">Copyright &copy; Airfly Company  2023</p>
         </div>
     </footer>
 </div>
