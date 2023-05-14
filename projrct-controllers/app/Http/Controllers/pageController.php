@@ -83,13 +83,8 @@ class PageController extends Controller
 
         return view('homepage', ['position' => self::$flights]);
     }
-
     public function detaglio()
     {
-       
-
-                return view('detaglio', ['position' => self::$flights]);
-            }
-        
-    
+        return view('detaglio', ['position' => self::$flights]);
+    }
 }

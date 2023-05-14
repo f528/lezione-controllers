@@ -7,7 +7,7 @@
     <!-- Responsive navbar-->
    <x-navbar/>
   
-   
+   {{-- LA  CARD DETAGLIO  --}}
          <div class="container text-center">
         <div class="row">
             <div class="row">
@@ -22,10 +22,13 @@
                                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                                 </a>
                             </div>
+                              @foreach ($position['departure'] as $flight)
+                              
                             <div class="card-body text-success">
-                                <h5 class="card-title font-weight-bold"><a>Detaglio del volo</a></h5>
+                                <h5 class="card-title font-weight-bold"><a>{{ $flight['id']}}</a></h5>
                                 <ul class="list-unstyled list-inline mb-0">
                                     <li class="list-inline-item me-0">
+                                        @endforeach
 
                                     <li class="list-inline-item ">
                                         <p class="text-danger text-capitalize fs-1 "> Company: {{ $flight['company'] }}
