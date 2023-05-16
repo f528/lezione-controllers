@@ -1,0 +1,20 @@
+@import 'bootstrap';
+.personaliza {
+    background-color: rgb(244, 255, 127);
+
+}
+body{
+
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.perso{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-left : 200px;
+    margin-top: 30px;
+
+
+}
+

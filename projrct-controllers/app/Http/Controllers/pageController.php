@@ -10,6 +10,7 @@ class PageController extends Controller
 
 
 
+
     public static $flights = [
         "departure" => [
             [
@@ -83,8 +84,32 @@ class PageController extends Controller
 
         return view('homepage', ['position' => self::$flights]);
     }
-    public function detaglio()
+    public function card()
     {
-        return view('detaglio', ['position' => self::$flights]);
+
+        return view('card');
+    }
+
+
+    public function detaglio($id)
+    {
+        foreach (self::$flights['departure'] as $flight) {
+            if ($flight['id'] == $id) {
+                if ($flight['seats']['occupied'] >= $flight['seats']['total']) {
+                    $posti = "posti esauriti";
+                } elseif ($flight['seats']['occupied'] < $flight['seats']['total']) {
+                    $posti = $flight['seats']['total'] - $flight['seats']['occupied'];
+                    $posti = "posti disponibile= $posti";
+                }
+                return view('detaglio', ['detaglio' => $flight, 'posti' => $posti]);
+            }
+        }
+        foreach (self::$flights['arrival'] as $flight) {
+            if ($flight['id'] == $id) {
+                return view('detaglio', ['arrivi' => $flight]);
+            }
+        }
+        abort(404, 'somthing happined ');
+
     }
 }
